@@ -2,11 +2,11 @@
 
 #define MAXLINE 1000
 
-int atoi(char s[]);
+unsigned atoi(char s[]);
 int mygetline(char s[], int lim);
 
 /* Convert a string s to integer */
-int atoi(char s[]) {
+unsigned int atoi(char s[]) {
 	int i, n;
 	
 	n = 0;
@@ -31,12 +31,11 @@ int mygetline(char s[], int lim) {
 }
 
 int main() {
-	int len;
+
 	char line[MAXLINE];
 	
-	while ((len = mygetline(line, MAXLINE)) > 0) {
-		printf("String %s", line);
-		printf("Integer %d\n", atoi(line));
+	while (mygetline(line, MAXLINE) > 0) {
+		printf("%u\n", atoi(line));
 	}
 
 	return 0;

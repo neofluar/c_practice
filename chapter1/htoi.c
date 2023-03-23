@@ -5,7 +5,7 @@
 
 unsigned int htoi(char s[]);
 
-/* Convert a hex string to an unsigned integer */
+/* Convert a hex string to an integer */
 unsigned int htoi(char s[]) {
 	int i, n;
 	
@@ -22,10 +22,9 @@ unsigned int htoi(char s[]) {
 }
 
 int main() {
-	int len;
 	char line[MAXLINE];
 
-	while ((len = mygetline(line)) > 0)
+	while (mygetline(line) > 0)
 		printf("%u\n", htoi(line));
 	
 	return 0;
