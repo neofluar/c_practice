@@ -47,5 +47,6 @@ int main() {
 		squeeze_all(line, cc);
 		printf("%s", line);
 	}
+	return 0;
 }
 
