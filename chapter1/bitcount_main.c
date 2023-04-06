@@ -29,7 +29,6 @@ int main() {
 	
 	x = 0;
 
-	
 	/* while (x < 100000000) {
 		bitcount(x); is about 4 times slower
 		faster_bitcount(x);
